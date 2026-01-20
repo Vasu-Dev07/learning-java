@@ -1,3 +1,3 @@
 # learning-java
 
-this is just a normal repo
+this is just a normal repo.

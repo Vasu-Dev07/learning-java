@@ -14,6 +14,7 @@ public class LCM {
         int num1 = Math.min(a, b);
         int num2 = Math.max(a, b);
         System.out.println("LCM of given number is: " + calculation(num1, num2));
+        System.out.println("LCM of given number is: " + another(num1, num2));
 
 
     }
@@ -29,6 +30,17 @@ public class LCM {
         }
     }
 
+    public static int another(int a, int b){
+        int i = 1;
+        while (i <= b) {
+            int factor = a * i;
+            if (factor % b == 0 ) {
+                return factor;
+            }
+            i++;
+        }
+        return 0;
+    }
 
     
 }
